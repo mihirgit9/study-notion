@@ -72,7 +72,10 @@ export const SignupForm = (props) => {
         {/* firstName-lastName */}
         <div className='flex justify-between items-center w-full gap-6'>
             <label>
-                <p className='text-md tracking-wider mb-[2px]'>First Name <sup>*</sup></p>
+                <p className='text-md tracking-wider mb-[2px]'>
+                    First Name 
+                    <sup className='text-red-500 text-lg relative top-[-3px]'>*</sup>
+                </p>
                 <input type='text' required
                     placeholder='Enter First Name'
                     name='firstName'
@@ -84,7 +87,10 @@ export const SignupForm = (props) => {
             </label>
 
             <label>
-                <p className='text-md tracking-wider mb-[2px]'>Last Name <sup>*</sup></p>
+                <p className='text-md tracking-wider mb-[2px]'>
+                    Last Name 
+                    <sup className='text-red-500 text-lg relative top-[-3px]'>*</sup>
+                </p>
                 <input type='text' required
                     placeholder='Enter Last Name'
                     name='lastName'
@@ -97,7 +103,10 @@ export const SignupForm = (props) => {
         </div>
 
         <label>
-            <p className='text-md tracking-wider mb-[2px]'>Enter Email Address</p>
+            <p className='text-md tracking-wider mb-[2px]'>
+                Enter Email Address
+                <sup className='text-red-500 text-lg relative top-[-3px]'>*</sup>
+            </p>
             <input type='email' required
                 placeholder='Enter email address'
                 name='email'
@@ -110,7 +119,10 @@ export const SignupForm = (props) => {
 
         <div>
             <label className='relative'>
-                <p className='text-md tracking-wider mb-[2px]'>Create Password <sup>*</sup></p>
+                <p className='text-md tracking-wider mb-[2px]'>
+                    Create Password 
+                    <sup className='text-red-500 text-lg relative top-[-3px]'>*</sup>
+                </p>
                 <input type={isVisible.isVisible1 ? 'text' : 'password'} required
                     placeholder='Enter Password'
                     name='password'
@@ -119,7 +131,7 @@ export const SignupForm = (props) => {
                     className=' w-full rounded-md h-[3.2rem] p-4 bg-black 
                     border-b-[1px] border-yellow-400 focus:border-white mb-3'
                 />
-                <div className='absolute right-3 top-[2.5rem] z-8 cursor-pointer text-xl' 
+                <div className='absolute right-3 top-[2.8rem] z-8 cursor-pointer text-xl' 
                     onClick={()=>setIsVisible((prev)=>{
                         return{
                             ...prev,
@@ -132,7 +144,10 @@ export const SignupForm = (props) => {
             </label>
 
             <label className='relative'>
-                <p className='text-md tracking-wider mb-[2px]'>Confirm Password <sup>*</sup></p>
+                <p className='text-md tracking-wider mb-[2px]'>
+                    Confirm Password 
+                    <sup className='text-red-500 text-lg relative top-[-3px]'>*</sup>
+                </p>
                 <input type={isVisible.isVisible2 ? 'text' : 'password'} required
                     placeholder='Confirm Password'
                     name='confirmPassword'
@@ -141,7 +156,7 @@ export const SignupForm = (props) => {
                     className=' w-full rounded-md h-[3.2rem] p-4 bg-black 
                     border-b-[1px] border-yellow-400 focus:border-white mb-3'
                 />
-                <div className='absolute right-3 top-[5.6rem] z-10 cursor-pointer text-xl' 
+                <div className='absolute right-3 top-[5.8rem] z-10 cursor-pointer text-xl' 
                     onClick={()=>setIsVisible((prev)=>{
                         return {
                             ...prev,

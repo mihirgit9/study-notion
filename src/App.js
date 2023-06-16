@@ -17,7 +17,7 @@ function App() {
     <div className=' bg-blue-950 w-[100vw] h-screen overflow-x-hidden'>
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
 
-      <div className=' text-white w-full h-screen '>
+      <div className=' text-white w-full'>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/login' element={<Login  setIsLoggedIn={setIsLoggedIn}/>}/>
